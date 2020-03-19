@@ -265,7 +265,7 @@ public class IntegrationTest {
 	
 	private static ThrustCurveMotor readMotor() {
 		GeneralMotorLoader loader = new GeneralMotorLoader();
-		InputStream is = IntegrationTest.class.getResourceAsStream("Estes_A8.rse");
+		InputStream is = ClassLoader.getSystemResourceAsStream("Estes_A8.rse");
 		assertNotNull("Problem in unit test, cannot find Estes_A8.rse", is);
 		try {
 			for (ThrustCurveMotor.Builder m : loader.load(is, "Estes_A8.rse")) {
@@ -353,7 +353,7 @@ public class IntegrationTest {
 	
 	private OpenRocketDocument loadRocket(String fileName) {
 		GeneralRocketLoader loader = new GeneralRocketLoader(new File(fileName));
-		InputStream is = this.getClass().getResourceAsStream(fileName);
+		InputStream is = ClassLoader.getSystemResourceAsStream(fileName);
 		String failMsg = String.format("Problem in unit test, cannot find %s", fileName);
 		assertNotNull(failMsg, is);
 		
