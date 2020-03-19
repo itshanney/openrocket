@@ -10,7 +10,6 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>openrocket-core</artifactId>
-    <version>20.04-SNAPSHOT</version>
     <name>OpenRocket Core</name>
 
     <properties>
@@ -39,23 +38,6 @@
     </build>
 
     <dependencies>
-
-        <!-- Logging Dependencies -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.30</version>
-        </dependency>
 
         <!-- OpenRocket Core Dependencies -->
         <dependency>
