@@ -55,7 +55,7 @@ public class TestMotorLoader {
 	private void test(MotorLoader loader, String file, String... digests) throws IOException {
 		List<ThrustCurveMotor.Builder> motors;
 		
-		InputStream is = this.getClass().getResourceAsStream(file);
+		InputStream is = ClassLoader.getSystemResourceAsStream(file);
 		assertNotNull("File " + file + " not found", is);
 		motors = loader.load(is, file);
 		is.close();
