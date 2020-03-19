@@ -43,6 +43,13 @@
 
     <dependencies>
 
+        <!-- Common Dependencies -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+
         <!-- Logging Dependencies -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
